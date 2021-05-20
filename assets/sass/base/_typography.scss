@@ -1,0 +1,72 @@
+@import "../abstracts/variables";
+
+
+
+.h1 {
+    font-family: $gruppo;
+    font-size: 9.2rem;
+    font-weight: 400;
+    line-height: 8rem;
+}
+
+.h2 {
+    font-family: $gruppo;
+    font-size: 7.2rem;
+    line-height: 6.4;
+    font-weight: 400;
+   line-height: 6.4rem;
+}
+
+
+.h3 {
+    font-family: $gruppo;
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: 4.8rem;
+}
+
+
+.h4 {
+    font-family: $gruppo;
+    font-size: 4.4rem;
+    line-height: 3.2rem;
+    font-weight: 400;
+
+}
+
+
+.h5 {
+    font-family: $oswald;
+    font-size: 1.8rem;
+    line-height: 3.2;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.label{
+    font-family: $lato;
+    font-size: 1.2rem;
+    line-height: 1.44rem;
+    font-weight: 400;
+    fill: solid;
+
+}
+.text-b{
+    font-family: $lato;
+    font-size: 2rem;
+    line-height: 3.2rem;
+    font-weight: 300;
+}
+
+.text{
+    font-family: $lato;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3.2rem;
+}
+.text-sm{
+    font-family: $lato;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+}
