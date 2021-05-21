@@ -5,19 +5,15 @@
 .h5{
     color: $pink;
 }
-body{
-    overflow-x: hidden;
-    #header{
-        overflow-x: hidden;
-    }
-    section{
-        overflow-x: hidden;
-    }
+// body,main,#header,#crypto,
+// #cryptocurrency,#services,
+// #features,#invest,#solutions,
+// #howItWorks, #startNow,
+// #blog,#subscribe,#footer{
+//     max-width:100%; 
+//     overflow-x:hidden; 
 
-
-}
-
-
+// }
 .cryptocurrency-button, 
 .invest-button, 
 .services-button,
@@ -463,7 +459,7 @@ background: $blue-gray;
 .cryptocurrency-column{
     order: 0;
     .cryptocurrency-image{
-        max-width: 40rem;
+        max-width: 36rem;
         margin-top: -20rem;
     }
 
@@ -486,7 +482,7 @@ background: $blue-gray;
     order: 1;
     
     .services__image{
-        max-width: 43rem;
+        max-width: 40rem;
         
     }
 }

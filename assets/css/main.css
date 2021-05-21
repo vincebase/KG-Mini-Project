@@ -800,18 +800,6 @@ html {
   color: #DD668C;
 }
 
-body {
-  overflow-x: hidden;
-}
-
-body #header {
-  overflow-x: hidden;
-}
-
-body section {
-  overflow-x: hidden;
-}
-
 .cryptocurrency-button,
 .invest-button,
 .services-button,
@@ -1228,7 +1216,7 @@ body section {
             order: 0;
   }
   .cryptocurrency-column .cryptocurrency-image {
-    max-width: 40rem;
+    max-width: 36rem;
     margin-top: -20rem;
   }
   .cryptocurrency-text__container {
@@ -1253,7 +1241,7 @@ body section {
             order: 1;
   }
   .services-image__container .services__image {
-    max-width: 43rem;
+    max-width: 40rem;
   }
   .guide__cards__container .cards {
     max-width: 25rem;
