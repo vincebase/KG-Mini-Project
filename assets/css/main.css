@@ -1,3 +1,15 @@
+.bg-blue {
+  background-color: #728CF7;
+}
+
+.bg-pink {
+  background-color: #E17094;
+}
+
+.insta-bg {
+  background-color: #68AAF3;
+}
+
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -788,6 +800,18 @@ html {
   color: #DD668C;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+body #header {
+  overflow-x: hidden;
+}
+
+body section {
+  overflow-x: hidden;
+}
+
 .cryptocurrency-button,
 .invest-button,
 .services-button,
@@ -802,7 +826,9 @@ html {
 .menu-links,
 .socmed-icon__links,
 .terms-and-policy__links,
-.terms-and-policy__links {
+.terms-and-policy__links,
+.menu-links,
+.feature-links {
   text-decoration: none;
 }
 
@@ -822,12 +848,12 @@ html {
   padding: 0 2.3rem;
 }
 
-.crypto-text span {
+.crypto-text__container span {
   color: #DD668C;
 }
 
 .h2 {
-  width: 10ch;
+  width: 8ch;
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
@@ -878,14 +904,6 @@ html {
 
 .services-text__title {
   width: 10ch;
-}
-
-.bg-blue {
-  background-color: #728CF7;
-}
-
-.bg-pink {
-  background-color: #E17094;
 }
 
 #features {
@@ -1108,7 +1126,7 @@ html {
 }
 
 .subcribe__btn {
-  min-width: 20rem;
+  width: 100%;
 }
 
 #footer {
@@ -1131,7 +1149,6 @@ html {
 .socmed-icons__container {
   max-width: 4.8rem;
   max-height: 4.8rem;
-  background-color: #728CF7;
   padding: 1.6rem;
   color: #ffffff;
   border-radius: 50%;
@@ -1150,11 +1167,20 @@ html {
   color: #ffffff50;
 }
 
-.terms-and-policy__links {
+.terms-and-policy__links,
+.menu-links,
+.feature-links {
   color: #ffffff;
 }
 
-.footer-bar__terms__policy__links-container {
+.terms-and-policy__links:hover,
+.menu-links:hover,
+.feature-links:hover {
+  color: #ffffff50;
+}
+
+.footer-bar__terms__policy__links-container,
+.footer-bar__copyrights {
   margin: 0 auto;
 }
 
@@ -1178,6 +1204,57 @@ html {
 }
 
 @media screen and (min-width: 768px) {
+  .crypto-image__img {
+    max-width: 34rem;
+  }
+  .crypto-row {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+  .crypto-column {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .crypto-text__container {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    margin-top: 18.7rem;
+  }
+  .cryptocurrency-column {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .cryptocurrency-column .cryptocurrency-image {
+    max-width: 40rem;
+    margin-top: -20rem;
+  }
+  .cryptocurrency-text__container {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .cryptocurrency-text__container .cryptocurrency-text__sub-title {
+    padding-top: 10rem;
+  }
+  .services-text__container {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .services-text__container .h3 {
+    width: 12ch;
+  }
+  .services-image__container {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .services-image__container .services__image {
+    max-width: 43rem;
+  }
   .guide__cards__container .cards {
     max-width: 25rem;
   }

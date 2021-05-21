@@ -5,7 +5,17 @@
 .h5{
     color: $pink;
 }
+body{
+    overflow-x: hidden;
+    #header{
+        overflow-x: hidden;
+    }
+    section{
+        overflow-x: hidden;
+    }
 
+
+}
 
 
 .cryptocurrency-button, 
@@ -22,7 +32,9 @@
 .menu-links,
 .socmed-icon__links,
 .terms-and-policy__links,
-.terms-and-policy__links{
+.terms-and-policy__links,
+.menu-links,
+.feature-links{
     text-decoration: none;
 }
 
@@ -56,11 +68,11 @@ width: 100vw;
 
 }
 
-.crypto-text span{
+.crypto-text__container span{
     color: $pink;
 }
     .h2{
-        width: 10ch;
+        width: 8ch;
         hyphens: auto;
         color: $white;
     }
@@ -112,12 +124,7 @@ width: 100vw;
     width: 10ch;
 }
 
-.bg-blue{
-    background-color: $card-bg-blue;
-}
-.bg-pink{
-    background-color: $card-bg-pink;
-}
+
 //features
 #features{
     background-color: $light-blue-bg;
@@ -171,9 +178,7 @@ width: 100vw;
     .cards__text{
         padding: 3.4rem 3.2rem 3.8rem 3.2rem;
     }
-    // .cards__text-title{
-    //     margin-bottom: 2.4rem;
-    // }
+  
 
 //invest
 #invest{
@@ -353,7 +358,7 @@ width: 100vw;
     color: $white;
 }
 .subcribe__btn{
-    min-width: 20rem;
+    width: 100%;
 }
 
 //footer
@@ -376,7 +381,6 @@ background: $blue-gray;
         .socmed-icons__container{
             max-width: 4.8rem;
             max-height: 4.8rem;
-            background-color: #728CF7;
             padding: 1.6rem;
             color: $white;
             border-radius: 50%;
@@ -392,10 +396,20 @@ background: $blue-gray;
 .footer-bar__copyrights{
     color: $white-op-50;
 }
-.terms-and-policy__links{
+.terms-and-policy__links,
+.menu-links,
+.feature-links{
     color: $white;
-       }
-.footer-bar__terms__policy__links-container{
+    &:hover{
+        color: $white-op-50;
+    }
+}
+
+
+
+
+.footer-bar__terms__policy__links-container,
+.footer-bar__copyrights{
     margin: 0 auto;
 }
 
@@ -431,6 +445,51 @@ background: $blue-gray;
 
 @media screen and (min-width: 768px){
 
+//hero
+.crypto-image__img{
+    max-width: 34rem;
+}
+.crypto-row{
+    flex-wrap: wrap-reverse;
+
+}
+.crypto-column{
+    order: 1;
+}
+.crypto-text__container{
+    order: 0;
+    margin-top: 18.7rem;
+}
+.cryptocurrency-column{
+    order: 0;
+    .cryptocurrency-image{
+        max-width: 40rem;
+        margin-top: -20rem;
+    }
+
+}
+.cryptocurrency-text__container{
+    order: 1;
+    .cryptocurrency-text__sub-title{
+        padding-top: 10rem;
+    }
+}
+
+//services
+.services-text__container{
+    order: 0;
+    .h3{
+        width: 12ch;
+    }
+}
+.services-image__container{
+    order: 1;
+    
+    .services__image{
+        max-width: 43rem;
+        
+    }
+}
 
 
 
