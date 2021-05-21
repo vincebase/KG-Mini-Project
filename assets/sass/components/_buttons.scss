@@ -10,22 +10,38 @@
     background-color: transparent;
     text-transform: uppercase;
     text-align: center;
+    border-radius: 2.4rem;
     
+    &:hover{
+        border: .1rem solid $white30;
+        color: $white;
+    }
 }
 
 .btn-outline{
     color: $white;
     border: 0.1rem solid rgba(255, 255, 255, 0.295743);
-    border-radius: 2.4rem;
+    &:hover{
+        border: .1rem solid $light-blue-bg;
+        color: $white;
+    }
 }
 .btn-gradient-blue{
     color: $white;
-    background: linear-gradient(180deg, #6378F7 0%, #86A6F8 100%);
-    border-radius: 2.4rem;
+    background: $btn-gradient-lblue;
+    &:hover{
+        color: $btn-blue;
+        background: $white;
+        border: .1rem solid $btn-blue;
+    }
 }
 .btn-gradient-pink{
     color: $white;
-    background: linear-gradient(180deg, #D05D84 0%, #F19DAF 100%);
-    border-radius: 2.4rem;
+    background: $btn-gradient-pink;
+    &:hover{
+        color: $pink;
+        background: $white;
+        border: .1rem solid $pink;
+    }
 }
 

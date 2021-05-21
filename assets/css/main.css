@@ -184,6 +184,86 @@
   margin-bottom: 3.1rem;
 }
 
+.pb-275 {
+  padding-bottom: 27.5rem;
+}
+
+.pb-199 {
+  padding-bottom: 19.9rem;
+}
+
+.mb-28 {
+  margin-bottom: 2.8rem;
+}
+
+.mb-13 {
+  margin-bottom: 1.3rem;
+}
+
+.mb-11 {
+  margin-bottom: 1.1rem;
+}
+
+.pb-216 {
+  padding-bottom: 21.6rem;
+}
+
+.mb-27 {
+  margin-bottom: 2.7rem;
+}
+
+.pb-144 {
+  padding-bottom: 14.4rem;
+}
+
+.mt-15 {
+  margin-top: 1.5rem;
+}
+
+.mb-64 {
+  margin-bottom: 6.4rem;
+}
+
+.mb-34 {
+  margin-bottom: 3.4rem;
+}
+
+.pb-101 {
+  padding-bottom: 10.1rem;
+}
+
+.mb-4 {
+  margin-bottom: .4rem;
+}
+
+.mb-32 {
+  margin-bottom: 3.2rem;
+}
+
+.pb-64 {
+  padding-bottom: 6.4rem;
+}
+
+.pl-23 {
+  padding-left: 2.3rem;
+}
+
+.mb-51 {
+  margin-bottom: 5.1rem;
+}
+
+.mb-34 {
+  margin-bottom: 3.4rem;
+}
+
+.mb-46 {
+  margin-bottom: 4.6rem;
+}
+
+.ml-23 {
+  margin-left: 2.3rem;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -577,7 +657,7 @@ html {
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (min-width: 1400px) {
   .column-xxl-1 {
     width: calc(1 / 12 * 100%);
   }
@@ -650,26 +730,46 @@ html {
   background-color: transparent;
   text-transform: uppercase;
   text-align: center;
+  border-radius: 2.4rem;
+}
+
+.btn:hover {
+  border: 0.1rem solid #ffffff3a;
+  color: #ffffff;
 }
 
 .btn-outline {
   color: #ffffff;
   border: 0.1rem solid rgba(255, 255, 255, 0.295743);
-  border-radius: 2.4rem;
+}
+
+.btn-outline:hover {
+  border: 0.1rem solid #D7E2FC;
+  color: #ffffff;
 }
 
 .btn-gradient-blue {
   color: #ffffff;
   background: -webkit-gradient(linear, left top, left bottom, from(#6378F7), to(#86A6F8));
   background: linear-gradient(180deg, #6378F7 0%, #86A6F8 100%);
-  border-radius: 2.4rem;
+}
+
+.btn-gradient-blue:hover {
+  color: #728CF7;
+  background: #ffffff;
+  border: 0.1rem solid #728CF7;
 }
 
 .btn-gradient-pink {
   color: #ffffff;
   background: -webkit-gradient(linear, left top, left bottom, from(#D05D84), to(#F19DAF));
   background: linear-gradient(180deg, #D05D84 0%, #F19DAF 100%);
-  border-radius: 2.4rem;
+}
+
+.btn-gradient-pink:hover {
+  color: #DD668C;
+  background: #ffffff;
+  border: 0.1rem solid #DD668C;
 }
 
 .h5 {
@@ -682,7 +782,13 @@ html {
 .crypto-email__submit,
 .cards__link,
 .nav-links,
-.hamburger__icon {
+.hamburger__icon,
+.start-now__sign-up__btn,
+.start-now__login__btn,
+.article-btn__link,
+.subcribe__btn,
+.menu-links,
+.socmed-icon__links {
   text-decoration: none;
 }
 
@@ -706,8 +812,8 @@ html {
   color: #DD668C;
 }
 
-.h1 {
-  width: 6ch;
+.h2 {
+  width: 10ch;
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
@@ -898,7 +1004,7 @@ html {
 
 .how-it-works__description {
   color: #ffffff;
-  width: 44ch;
+  width: 25ch;
   margin: 3.2rem auto 6.8rem auto;
   text-align: center;
 }
@@ -911,12 +1017,97 @@ html {
   margin-bottom: 11.4rem;
 }
 
+.bg-pink {
+  background-color: #D15F85;
+}
+
+.bg-gray {
+  background-color: #34405D;
+}
+
 .card__item-number__text {
   color: #ffffff;
 }
 
 .guide__cards__container .cards {
-  max-width: 25rem;
+  max-width: 29rem;
+}
+
+#start-now {
+  background: -webkit-gradient(linear, left top, left bottom, from(#455270), to(#1A253B)), #9B9B9B;
+  background: linear-gradient(180deg, #455270 0%, #1A253B 100%), #9B9B9B;
+}
+
+.start-now__image {
+  max-width: 30rem;
+  max-height: 30rem;
+}
+
+.start-now__text-title,
+.start-now__login__btn {
+  color: #ffffff;
+}
+
+#blog {
+  background-color: #455270;
+}
+
+#blog .h3 {
+  color: #ffffff;
+  max-width: 21rem;
+}
+
+.cards-article {
+  background-color: #ffffff;
+  max-width: 30rem;
+  border-radius: 2.4rem;
+}
+
+.cards-article__image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cards-article__caption {
+  text-align: center;
+  max-width: 10ch;
+  margin: 0 auto;
+  padding-bottom: 4.6rem;
+}
+
+.article-btn__link {
+  max-width: 17rem;
+}
+
+.subscribe__primary-container {
+  background-color: #141C2E;
+  border-radius: 2.4rem;
+}
+
+.subscribe__text-container {
+  padding: 5.6rem 2.8rem 0 1rem;
+}
+
+.subscribe__title {
+  color: #ffffff;
+}
+
+.subcribe__btn {
+  min-width: 20rem;
+}
+
+#footer {
+  background: #455270;
+}
+
+.footer__logo-container {
+  max-width: 20rem;
+  height: 4.8rem;
+}
+
+.footer-logo__image {
+  width: 100%;
 }
 
 .cryptocurrency-text__description,

@@ -1,5 +1,6 @@
 @import "../abstracts/variables";
 
+
 //all
 .h5{
     color: $pink;
@@ -13,7 +14,13 @@
 .crypto-email__submit,
 .cards__link,
 .nav-links,
-.hamburger__icon{
+.hamburger__icon,
+.start-now__sign-up__btn,
+.start-now__login__btn,
+.article-btn__link,
+.subcribe__btn,
+.menu-links,
+.socmed-icon__links{
     text-decoration: none;
 }
 
@@ -40,7 +47,7 @@
 // -------------------- hero ------------------ //
 #crypto{
  background: $bluegray-gradient;
- width: 100vw;
+width: 100vw;    
 }
 .crypto-container{
     padding: 0 2.3rem;
@@ -50,8 +57,8 @@
 .crypto-text span{
     color: $pink;
 }
-    .h1{
-        width: 6ch;
+    .h2{
+        width: 10ch;
         hyphens: auto;
         color: $white;
     }
@@ -256,7 +263,7 @@
 }
 .how-it-works__description{
     color: $white;
-    width: 44ch;
+    width: 25ch;
     margin: 3.2rem auto 6.8rem auto;
     text-align: center;
 }
@@ -269,14 +276,98 @@
     height: 8rem;
     margin-bottom: 11.4rem;
 }
+//  bg color of number container  //
+.bg-pink{
+    background-color: #D15F85;
+}
+.bg-gray{
+    background-color: #34405D;
+}
+//--------------------------------//
 .card__item-number__text{
     color: $white;
 }
 .guide__cards__container{
     .cards{
-        max-width: 25rem;
+        max-width: 29rem;
     }
 }
+
+//start-now css
+#start-now{
+    background: $bluegray-gradient;
+}
+.start-now__image{
+    max-width: 30rem;
+    max-height: 30rem;
+}
+.start-now__text-title,
+.start-now__login__btn{
+    color: $white;
+}
+
+//Our Blog
+#blog{
+    background-color: $blue-gray;
+    .h3{
+        color: $white;
+        max-width: 21rem;
+    }
+}
+.cards-article{
+    background-color: $white;
+    max-width: 30rem;
+    border-radius: 2.4rem;
+}
+.cards-article__image{
+   width: 100%;
+    object-fit: cover;
+    
+}
+
+.cards-article__caption{
+    
+    text-align: center;
+    max-width: 10ch;
+    margin: 0 auto;
+    padding-bottom: 4.6rem;
+}
+.article-btn__link{
+    max-width: 17rem;
+}
+//subscribe
+
+
+.subscribe__primary-container{
+    
+    background-color: $bg-subscribe-color;
+    border-radius: 2.4rem;
+    
+}
+.subscribe__text-container{
+    padding: 5.6rem 2.8rem 0 1rem;
+}
+.subscribe__title{
+    color: $white;
+}
+.subcribe__btn{
+    min-width: 20rem;
+}
+
+//footer
+
+
+#footer{
+background: $blue-gray;
+}
+.footer__logo-container{
+    max-width: 20rem;
+    height: 4.8rem;
+}
+.footer-logo__image{
+    width: 100%;
+}
+
 
 //font-colors
 //#333333
