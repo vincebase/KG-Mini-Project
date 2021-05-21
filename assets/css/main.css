@@ -264,6 +264,18 @@
   margin-left: 2.3rem;
 }
 
+.mb-96 {
+  margin-bottom: 9.6rem;
+}
+
+.mb-54 {
+  margin-bottom: 5.4rem;
+}
+
+.mr-77 {
+  margin-right: 7.7rem;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -788,7 +800,9 @@ html {
 .article-btn__link,
 .subcribe__btn,
 .menu-links,
-.socmed-icon__links {
+.socmed-icon__links,
+.terms-and-policy__links,
+.terms-and-policy__links {
   text-decoration: none;
 }
 
@@ -1108,6 +1122,40 @@ html {
 
 .footer-logo__image {
   width: 100%;
+}
+
+.socmed-icon__links:not(:last-child) {
+  margin-right: .8rem;
+}
+
+.socmed-icons__container {
+  max-width: 4.8rem;
+  max-height: 4.8rem;
+  background-color: #728CF7;
+  padding: 1.6rem;
+  color: #ffffff;
+  border-radius: 50%;
+}
+
+.fab {
+  font-size: 1.6rem;
+}
+
+.footer-bar {
+  background-color: #131C2D;
+  padding: 4.2rem 2.65rem 3.8rem 2.65rem;
+}
+
+.footer-bar__copyrights {
+  color: #ffffff50;
+}
+
+.terms-and-policy__links {
+  color: #ffffff;
+}
+
+.footer-bar__terms__policy__links-container {
+  margin: 0 auto;
 }
 
 .cryptocurrency-text__description,

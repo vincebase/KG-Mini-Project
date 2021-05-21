@@ -20,7 +20,9 @@
 .article-btn__link,
 .subcribe__btn,
 .menu-links,
-.socmed-icon__links{
+.socmed-icon__links,
+.terms-and-policy__links,
+.terms-and-policy__links{
     text-decoration: none;
 }
 
@@ -368,6 +370,35 @@ background: $blue-gray;
     width: 100%;
 }
 
+    .socmed-icon__links:not(:last-child){
+        margin-right: .8rem;
+    }
+        .socmed-icons__container{
+            max-width: 4.8rem;
+            max-height: 4.8rem;
+            background-color: #728CF7;
+            padding: 1.6rem;
+            color: $white;
+            border-radius: 50%;
+        }
+    .fab{
+        font-size: 1.6rem;
+    }
+//footer-bar
+.footer-bar{
+    background-color: #131C2D;
+    padding: 4.2rem 2.65rem 3.8rem 2.65rem;
+}
+.footer-bar__copyrights{
+    color: $white-op-50;
+}
+.terms-and-policy__links{
+    color: $white;
+       }
+.footer-bar__terms__policy__links-container{
+    margin: 0 auto;
+}
+
 
 //font-colors
 //#333333
@@ -394,6 +425,9 @@ background: $blue-gray;
 
 
 
+
+
+//-------- MIN WIDTH SPACING -----//
 
 @media screen and (min-width: 768px){
 
