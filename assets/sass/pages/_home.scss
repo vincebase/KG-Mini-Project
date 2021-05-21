@@ -21,7 +21,7 @@
 .crypto-image__img, 
 .cryptocurrency-image,
 .services__image{
-    max-width: 35rem;
+    max-width: 25rem;
 }
 
 
@@ -40,6 +40,7 @@
 // -------------------- hero ------------------ //
 #crypto{
  background: $bluegray-gradient;
+ width: 100vw;
 }
 .crypto-container{
     padding: 0 2.3rem;
@@ -51,6 +52,7 @@
 }
     .h1{
         width: 6ch;
+        hyphens: auto;
         color: $white;
     }
 .text-b{
@@ -67,11 +69,11 @@
 
 
 .input-email{
-    width: 19.8rem;
+    
     display: flex;
     input{
         width: 100%;
-        min-width: 19.8rem;
+        min-width: 15rem;
         height: 4.8rem;
         border-radius: 2.4rem;
         padding: .9rem 2.4rem .7rem 2.4rem;
@@ -107,94 +109,94 @@
 .bg-pink{
     background-color: $card-bg-pink;
 }
-
-features
+//features
 #features{
-    background-color:$light-blue-bg;
+    background-color: $light-blue-bg;
 }
 
 .features-text__container{
     text-align: center;
-    max-width: 57rem;
+}
+.features-text__title {
+    max-width: 12ch;
+    hyphens: auto;
 }
 
 
-
-    //cards
-    // .cards{
-    //     border-radius: 2.4rem;
-    //     background-color: $white;
-    // }
-    // .card__image-insight,
-    // .card__image-monitoring,
-    // .card__image-trading{
-    //     height: 22.4rem;
-    //     border-top-right-radius: 2.4rem;
-    //     border-top-left-radius: 2.4rem;
-        
-    // }
-
+   
+    .cards{
+        border-radius: 2.4rem;
+        background-color: $white;
+    }
+    .card__image-insight,
+    .card__image-monitoring,
+    .card__image-trading{
+        border-top-right-radius: 2.4rem;
+        border-top-left-radius: 2.4rem;
+    }
+    .cards__items{
+        .cards{  
+            max-width: 33.8rem;
+            max-height: 46.4rem;
+        }
+    }
     
-    // .card__image-insight{
-    //     background-color: $card-bg-blue;
-    //     padding: 3.2rem 8.7rem 3.2rem 8.7rem;
-    // }
-    // .card__image-monitoring{
-    //     background-color: $card-bg-pink;
-    //     padding: 3.2rem 8.7rem 3.2rem 8.7rem;
-    // }
-    // .card__image-trading{
-    //     background-color: $card-bg-black;
-    //     padding: 3.2rem 8.7rem 3.2rem 8.7rem;
-    // }
-    // .card__image__img{
-    //     max-width: 19.6rem;
-    //     max-height: 16rem;
-    //     object-fit: cover;
-        
-    // }
-    // .cards__text{
-    //     padding: 3.4rem 3.2rem 3.8rem 3.2rem;
-    // }
+    .card__image-insight{
+        background-color: $card-bg-blue;
+        padding: 3.2rem 8.7rem 3.2rem 8.7rem;
+    }
+    .card__image-monitoring{
+        background-color: $card-bg-pink;
+        padding: 3.2rem 8.7rem 3.2rem 8.7rem;
+    }
+    .card__image-trading{
+        background-color: $card-bg-black;
+        padding: 3.2rem 8.7rem 3.2rem 8.7rem;
+    }
+    .card__image__img{
+        width: 100%;
+        height: 100%;
+        // object-fit: cover;
+    }
+  
+    .cards__text{
+        padding: 3.4rem 3.2rem 3.8rem 3.2rem;
+    }
     // .cards__text-title{
     //     margin-bottom: 2.4rem;
     // }
 
 //invest
-// #invest{
-//     background-color:$light-blue-bg;
-// }
+#invest{
+    background-color:$light-blue-bg;
+}
 
-// // .invest-image__container{
-// //     width: 100%;
-// //     height: 100%;
-// // }
-// .invest-image__img{
-//     width: 57rem;
-//     height: 53.042rem;
-//     object-fit: cover;
-// }
-// .invest-text__title{
-//     width: 11ch;
-// }
+.invest-image__img{
+    max-width: 30rem;
+    max-height: 31.8rem;
+    object-fit: cover;
+}
+.invest-text__title{
+    width: 7ch;
+}
 
 
 
 // //solution
-// .solution-container__carousel{
-//     border-radius: 2.4rem;
-//     background-color: $white;
-// }
+.solution-container__carousel{
+    border-radius: 2.4rem;
+    background-color: $white;
+}
 // .solutions-text__description{
 //     width: 38ch;
 // }
-// .icon__container{
-//     padding: 2.3rem 2.7rem 2.3rem 2.604rem;
-//     background-color: $card-bg-blue;
-//     border-radius: 2.4rem;
-//     width: 7rem;
-//     height: 7rem;
-// }
+.icon__container{
+    padding: 2.3rem 2.7rem 2.3rem 2.604rem;
+    background-color: $card-bg-blue;
+    border-radius: 2.4rem;
+    width: 7rem;
+    height: 7rem;
+}
 // .icon{
 //     width: 1.696rem;
 //     height: 2.4rem;
@@ -203,53 +205,78 @@ features
 // .solution__carousel__title{
 //     width: 5ch;
 // }
+.carousel-btn{
+    text-decoration: none;
+}
+.solution__carousel__img{
+    max-width: 30rem;
+    height: 31rem;
+}
+.carousel-btn__container{
 
-// .solution__carousel__img{
-//     width: 51.8rem;
-//     height: 46.8rem;
-// }
+    .carousel-btn{
+        display: inline-block;
+        width: 1.6rem;
+        height: 1.6rem;
+        border-radius: 50%;
+        background-color: $light-blue-bg;
+        &:hover{
+            background-color: $btn-blue;
+        }
+    }
+
+}
+
+
+
+
+
 // .solution__carousel__description{
 //     width: 40ch;
 // }
 
 //How it works
 
+#how-it-works{
+    background: $bluegray-gradient;
+    .cards{
+        padding: 3.2rem 3.2rem 3.8rem 3.2rem;
+    }
+}
+.how-it-works__container{
+    text-align: center;
+    .how-it-works__title{
+        color: $white;
+    }
+}
+.how-it-works__description,
+.how-it-works__subtitle,
+.how-it-works__title{
+    margin: 0 auto;
+}
+.how-it-works__description{
+    color: $white;
+    width: 44ch;
+    margin: 3.2rem auto 6.8rem auto;
+    text-align: center;
+}
 
-// //ho it works
 
-// #how-it-works{
-//     background: $bluegray-gradient;
-//     .cards{
-//         padding: 3.2rem 3.2rem 3.8rem 3.2rem;
-//     }
-// }
-
-// .how-it-works__description,
-// .how-it-works__subtitle,
-// .how-it-works__title{
-//     margin: 0 auto;
-// }
-// .how-it-works__description{
-//     color: $white;
-//     width: 44ch;
-//     margin: 3.2rem auto 6.8rem auto;
-//     text-align: center;
-// }
-// .how-it-works__title{
-//     color: $white;
-// }
-
-// .card__item-number{
-//     border-radius: 50%;
-//     background-color: $card-num-bg-blue;
-//     width: 8rem;
-//     height: 8rem;
-//     margin-bottom: 11.4rem;
-// }
-// .card__item-number__text{
-//     color: $white;
-// }
-
+.card__item-number{
+    border-radius: 50%;
+    background-color: $card-num-bg-blue;
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 11.4rem;
+}
+.card__item-number__text{
+    color: $white;
+}
+.guide__cards__container{
+    .cards{
+        max-width: 25rem;
+    }
+}
 
 //font-colors
 //#333333
@@ -271,3 +298,25 @@ features
     color: $text-blck-50;
 }
 
+
+
+
+
+
+
+@media screen and (min-width: 768px){
+
+
+
+
+//how it works
+.guide__cards__container{
+    .cards{
+        max-width: 25rem;
+        &:nth-child(odd){
+            margin-right: 3rem;
+        }
+    }
+}
+
+}
