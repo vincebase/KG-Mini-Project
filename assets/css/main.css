@@ -999,12 +999,12 @@ html {
   background-color: #728CF7;
 }
 
-#how-it-works {
+#howItWorks {
   background: -webkit-gradient(linear, left top, left bottom, from(#455270), to(#1A253B)), #9B9B9B;
   background: linear-gradient(180deg, #455270 0%, #1A253B 100%), #9B9B9B;
 }
 
-#how-it-works .cards {
+#howItWorks .cards {
   padding: 3.2rem 3.2rem 3.8rem 3.2rem;
 }
 
