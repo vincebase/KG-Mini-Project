@@ -5,14 +5,14 @@
 .h5{
     color: $pink;
 }
-// body,main,#header,#crypto,
-// #cryptocurrency,#services,
-// #features,#invest,#solutions,
-// #howItWorks, #startNow,
-// #blog,#subscribe,#footer{
-//     overflow-x:hidden; 
+body,main,#header,#crypto,
+#cryptocurrency,#services,
+#features,#invest,#solutions,
+#howItWorks, #startNow,
+#blog,#subscribe,#footer{
+    overflow-x:hidden; 
 
-// }
+}
 .cryptocurrency-button, 
 .invest-button, 
 .services-button,
@@ -37,7 +37,7 @@
 .crypto-image__img, 
 .cryptocurrency-image,
 .services__image{
-    max-width: 25rem;
+    max-width: 35rem;
 }
 
 
@@ -167,7 +167,7 @@ width: 100vw;
     .card__image__img{
         width: 100%;
         height: 100%;
-        // object-fit: cover;
+
     }
   
     .cards__text{
@@ -183,7 +183,6 @@ width: 100vw;
 .invest-image__img{
     max-width: 30rem;
     max-height: 31.8rem;
-    object-fit: cover;
 }
 .invest-text__title{
     width: 7ch;
@@ -196,9 +195,7 @@ width: 100vw;
     border-radius: 2.4rem;
     background-color: $white;
 }
-// .solutions-text__description{
-//     width: 38ch;
-// }
+
 .icon__container{
     padding: 2.3rem 2.7rem 2.3rem 2.604rem;
     background-color: $card-bg-blue;
@@ -206,14 +203,11 @@ width: 100vw;
     width: 7rem;
     height: 7rem;
 }
-// .icon{
-//     width: 1.696rem;
-//     height: 2.4rem;
-// }
 
-// .solution__carousel__title{
-//     width: 5ch;
-// }
+.solution__carousel__description{
+    max-width: 30ch;
+}
+
 .carousel-btn{
     text-decoration: none;
 }
@@ -240,9 +234,6 @@ width: 100vw;
 
 
 
-// .solution__carousel__description{
-//     width: 40ch;
-// }
 
 //How it works
 
@@ -442,7 +433,9 @@ background: $blue-gray;
 
 //hero
 .crypto-image__img{
-    max-width: 34rem;
+    max-width: 39rem;
+    margin-top: 12.5rem;
+    object-fit: contain;
 }
 .crypto-row{
     flex-wrap: wrap-reverse;
@@ -486,6 +479,12 @@ background: $blue-gray;
     }
 }
 
+//features
+.features-text__title{
+    hyphens: none;
+    max-width: 15ch;
+}
+
 
 
 //how it works
@@ -499,3 +498,28 @@ background: $blue-gray;
 }
 
 }
+
+@media screen and (min-width: 992px) {
+    .crypto-text__container{
+        .h1{
+            color: $white;
+            width: 17ch;
+            font-size: 9.2rem;
+            line-height: 8rem;
+        }
+    }
+    .crypto-image__container{
+        justify-content: flex-end;
+    }
+    .crypto-image__img{
+        max-width: 38rem;
+        max-height: 40rem;
+        margin-top: 16rem;
+    }
+    .cryptocurrency-image{
+        padding-right: 3rem;
+    }
+}
+
+
+//------------------WAVE-----------------//

@@ -21,7 +21,7 @@
   display: grid;
 }
 
-.d-none {
+.d-none-min-tab {
   display: none;
 }
 
@@ -288,6 +288,32 @@
   margin-right: 7.7rem;
 }
 
+.pt-16px {
+  padding-top: 1.6rem;
+}
+
+.mt-42 {
+  margin-top: 4.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .px-44 {
+    padding-left: 4.45rem;
+    padding-right: 4.45rem;
+  }
+  .mx-24 {
+    margin-left: -2.4rem;
+    padding-right: -2.4rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .px-67 {
+    padding-left: 6.75rem;
+    padding-right: 6.75rem;
+  }
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -351,11 +377,13 @@ html {
   box-sizing: inherit;
 }
 
-.h1 {
-  font-family: "Gruppo", cursive;
-  font-size: 9.2rem;
-  font-weight: 400;
-  line-height: 8rem;
+@media only screen and (min-width: 992px) {
+  .h1 {
+    font-family: "Gruppo", cursive;
+    font-size: 9.2rem;
+    font-weight: 400;
+    line-height: 8rem;
+  }
 }
 
 .h2 {
@@ -800,6 +828,14 @@ html {
   color: #DD668C;
 }
 
+body, main, #header, #crypto,
+#cryptocurrency, #services,
+#features, #invest, #solutions,
+#howItWorks, #startNow,
+#blog, #subscribe, #footer {
+  overflow-x: hidden;
+}
+
 .cryptocurrency-button,
 .invest-button,
 .services-button,
@@ -823,7 +859,7 @@ html {
 .crypto-image__img,
 .cryptocurrency-image,
 .services__image {
-  max-width: 25rem;
+  max-width: 35rem;
 }
 
 #crypto {
@@ -957,8 +993,6 @@ html {
 .invest-image__img {
   max-width: 30rem;
   max-height: 31.8rem;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .invest-text__title {
@@ -976,6 +1010,10 @@ html {
   border-radius: 2.4rem;
   width: 7rem;
   height: 7rem;
+}
+
+.solution__carousel__description {
+  max-width: 30ch;
 }
 
 .carousel-btn {
@@ -1193,7 +1231,10 @@ html {
 
 @media screen and (min-width: 768px) {
   .crypto-image__img {
-    max-width: 34rem;
+    max-width: 39rem;
+    margin-top: 12.5rem;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .crypto-row {
     -ms-flex-wrap: wrap-reverse;
@@ -1243,11 +1284,39 @@ html {
   .services-image__container .services__image {
     max-width: 40rem;
   }
+  .features-text__title {
+    -webkit-hyphens: none;
+        -ms-hyphens: none;
+            hyphens: none;
+    max-width: 15ch;
+  }
   .guide__cards__container .cards {
     max-width: 25rem;
   }
   .guide__cards__container .cards:nth-child(odd) {
     margin-right: 3rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .crypto-text__container .h1 {
+    color: #ffffff;
+    width: 17ch;
+    font-size: 9.2rem;
+    line-height: 8rem;
+  }
+  .crypto-image__container {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .crypto-image__img {
+    max-width: 38rem;
+    max-height: 40rem;
+    margin-top: 16rem;
+  }
+  .cryptocurrency-image {
+    padding-right: 3rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
