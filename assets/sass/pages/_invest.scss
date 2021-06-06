@@ -1,0 +1,36 @@
+//invest
+#invest{
+    background-color:$light-blue-bg;
+    z-index: -10;
+}
+.invest-row{
+    margin-top: 30px;
+}
+.invest-container{
+    margin-bottom: 20rem;
+}
+.invest-image__img{
+    max-width: 30rem;
+    max-height: 31.8rem;
+}
+
+
+
+
+@media screen and(min-width: 576px){
+    .invest-container{ 
+        margin-bottom: 20rem;
+    }
+    }
+@media screen and (min-width: 768px){
+    .invest-text__title{
+     width: 15ch;
+    }
+    .invest-text__description{
+        width: 30ch;
+       }
+
+}
+@media screen and (min-width: 1200px){
+   
+}

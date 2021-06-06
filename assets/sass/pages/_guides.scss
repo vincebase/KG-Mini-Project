@@ -1,0 +1,58 @@
+//How it works
+
+#howItWorks{
+    .row{
+        margin-top: 0;
+    }
+    .cards{
+        padding: 3.2rem 3.2rem 3.8rem 3.2rem;
+    }
+}
+.how-it-works__container{
+    text-align: center;
+    .how-it-works__title{
+        color: $white;
+    }
+}
+.how-it-works__description,
+.how-it-works__subtitle,
+.how-it-works__title{
+    margin: 0 auto;
+}
+.how-it-works__description{
+    color: $white;
+    width: 25ch;
+    margin: 3.2rem auto 6.8rem auto;
+    text-align: center;
+}
+.card__item-number{
+    border-radius: 50%;
+    background-color: $card-num-bg-blue;
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 11.4rem;
+}
+.card__item-number__text{
+    color: $white;
+}
+.guide__cards__container{
+    .cards{
+        max-width: 29rem;
+    }
+}
+
+
+@media screen and (min-width: 768px){
+.guide__cards__container{
+    .cards{
+        max-width: 25rem;
+        &:nth-child(odd){
+            margin-right: 3rem;
+        }
+    }
+}
+
+}
+@media screen and (min-width: 1200px){
+   
+}

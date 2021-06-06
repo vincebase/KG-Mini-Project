@@ -1,0 +1,163 @@
+@import "../abstracts/variables";
+
+//all
+.cryptocurrency-text__description, 
+.invest-text__description, 
+.services-text__description,
+.features-text__description,
+.cards__link,
+.solutions-text__description,
+.solution__carousel__description{
+  color: $text-blck;
+}
+
+
+
+
+.h5 {
+  color: $pink;
+}
+body,
+main,
+#header,
+#crypto,
+#cryptocurrency,
+#services,
+#features,
+#invest,
+#solutions,
+#howItWorks,
+#startNow,
+#blog,
+#subscribe,
+#footer {
+  overflow-x: hidden;
+}
+//image
+.crypto-image__img,
+.cryptocurrency-image,
+.services__image {
+  max-width: 35rem;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+// -------------------- hero ------------------ //
+
+#crypto{
+  width: 100%;
+  height: 100%;
+  background-image: url(./../img/bg-wave.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  overflow-y: hidden;
+  padding-bottom: 5rem;
+}
+.crypto-container {
+  position: relative;
+}
+.crypto-text__container{
+  padding-bottom: 10.3rem;
+}
+
+.crypto-text__container span {
+  color: $pink;
+}
+.h2 {
+  width: 8ch;
+  hyphens: auto;
+  color: $white;
+}
+.crypto-image__container{
+  margin-top: 4rem;
+  margin-bottom: -12rem;
+}
+.hero-text__description{
+  color: $white
+}
+.text-sm {
+  color: $white-op-50;
+}
+
+.crypto-email__submit {
+  width: 12.2rem;
+  height: 4.8rem;
+}
+
+.input-email {
+  display: flex;
+  input {
+    width: 100%;
+    min-width: 15rem;
+    height: 4.8rem;
+    border-radius: 2.4rem;
+    padding: 0.9rem 2.4rem 0.7rem 2.4rem;
+    border: 0.1rem solid #dadada;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+//-------- MIN WIDTH SPACING -----//
+
+@media screen and (min-width: 768px) {
+  #crypto{
+  padding-bottom: 10rem;
+  }
+  .crypto-image__img {
+    max-width: 39rem;
+    object-fit: contain;
+    margin-top: 10rem;
+  }
+  .crypto-row {
+    flex-wrap: wrap-reverse;
+  }
+  .crypto-column {
+    order: 1;
+  }
+  .crypto-text__container {
+    order: 0;
+    margin-top: 18.7rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .crypto-text__container {
+    .h1 {
+      color: $white;
+      width: 17ch;
+      font-size: 9.2rem;
+      line-height: 8rem;
+    }
+  }
+  .crypto-image__img {
+    max-width: 38rem;
+    max-height: 40rem;
+    margin-top: 5rem;
+
+  }
+}
+@media screen and (min-width: 1200px) {
+ 
+}
+
+//------------------WAVE-----------------//
+.my-svg {
+  position: absolute;
+}
+.wave0 {
+  top: 0;
+  left: 0;
+}
+.wave1 {
+  top: 0;
+  left: 0;
+  z-index: 3;
+}

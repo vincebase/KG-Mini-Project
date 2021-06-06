@@ -1,0 +1,92 @@
+//solution
+#solutions{
+
+}
+.bg-gradient{
+    background: $blue-gray;
+    padding-top: 1rem;
+}
+.solution-container__carousel{
+    border-radius: 2.4rem;
+    background-color: $white;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 5rem;
+    z-index: 999;
+    &.column{
+        z-index: 999;
+    }
+}
+
+.icon__container{
+    padding: 2.3rem 2.7rem 2.3rem 2.604rem;
+    background-color: $card-bg-blue;
+    border-radius: 2.4rem;
+    width: 7rem;
+    height: 7rem;
+}
+
+.solution__carousel__description{
+    max-width: 30ch;
+}
+
+.carousel-btn{
+    text-decoration: none;
+}
+.solution__carousel__img{
+    max-width: 30rem;
+    height: 31rem;
+}
+.carousel-btn__container{
+
+    .carousel-btn{
+        display: inline-block;
+        width: 1.6rem;
+        height: 1.6rem;
+        border-radius: 50%;
+        background-color: $light-blue-bg;
+        &:hover{
+            background-color: $btn-blue;
+        }
+    }
+
+}
+.bg-img-mix-wave{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    overflow-y: hidden;
+    width: 100%;
+    z-index: 0;
+    margin-top: -2rem;
+
+}
+
+
+
+
+
+@media screen and (min-width: 576px){
+    #solutions{
+        background: $bluegray-gradient;
+    }
+    
+    .bg-img-mix-wave{
+        display: none;
+    }
+    .solution-primary-row__container{
+        margin-top: -30rem;
+        z-index: 99;
+        
+    }
+    .bg-gradient{
+        background: none;
+    }
+}
+@media screen and (min-width: 768px){
+
+}
+@media screen and (min-width: 1200px){
+   
+}

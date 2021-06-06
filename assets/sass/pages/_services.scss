@@ -1,0 +1,36 @@
+.services__image-container{
+    width: 8.6rem;
+    height: 8.6rem;
+    border-radius: 2.4rem;
+}
+
+.services-text__title{
+    width: 10ch;
+}
+
+
+@media screen and (min-width: 768px){
+
+//services
+.services-text__container{
+    order: 0;
+    .h3{
+        width: 12ch;
+    }
+}
+.services-image__container{
+    order: 1;
+    
+    .services__image{
+        min-width: 40rem;
+        
+    }
+}
+}
+@media screen and (min-width: 1200px){
+    .services__image{
+
+        width: 40rem;
+        height: 40rem;
+    }
+}

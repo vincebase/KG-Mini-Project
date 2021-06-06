@@ -1,19 +1,26 @@
 //abstracts
 @import "abstracts/variables";
-@import "abstracts/utilities";
 
 //base
 @import "base/reset";
 @import "base/initial";
 @import "base/typography";
+@import "base/utilities";
 
 //layout
 @import "layout/grid";
 @import "layout/header";
-@import "layout/navigation";
+@import "layout/footer";
 //conmponents
 @import "components/buttons";
-@import "components/input";
 //pages
-@import "pages/home";
-
+@import "pages/hero";
+@import "pages/about";
+@import "pages/services";
+@import "pages/features";
+@import "pages/invest";
+@import "pages/solutions";
+@import "pages/guides";
+@import "pages/start-now";
+@import "pages/blog";
+@import "pages/subscribe";

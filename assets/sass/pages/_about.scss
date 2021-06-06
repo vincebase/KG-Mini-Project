@@ -1,0 +1,35 @@
+.cryptocurrency-text__title{
+    width: 6ch;
+}
+.cryptocurrency-row{
+    margin-top: 0;
+}
+.cryptocurrency-image{
+    margin-top: -10rem;
+}
+
+@media screen and (min-width: 768px){
+    .cryptocurrency-column{
+        order: 0;
+        .cryptocurrency-image{
+            max-width: 36rem;
+            margin-top: -20rem;
+        }
+    
+    }
+    .cryptocurrency-text__container{
+        order: 1;
+        .cryptocurrency-text__sub-title{
+            padding-top: 10rem;
+        }
+    }
+
+}
+@media screen and (min-width: 992px){
+    .cryptocurrency-image{
+        padding-right: 3rem;
+    }
+}
+@media screen and (min-width: 1200px){
+   
+}
