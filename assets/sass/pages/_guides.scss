@@ -1,10 +1,8 @@
 //How it works
 
-#howItWorks{
-    .row{
-        margin-top: 0;
-    }
+.guide__cards__container{
     .cards{
+        max-width: 27rem;
         padding: 3.2rem 3.2rem 3.8rem 3.2rem;
     }
 }
@@ -27,7 +25,7 @@
 }
 .card__item-number{
     border-radius: 50%;
-    background-color: $card-num-bg-blue;
+    
     width: 8rem;
     height: 8rem;
     margin-bottom: 11.4rem;
@@ -35,24 +33,21 @@
 .card__item-number__text{
     color: $white;
 }
-.guide__cards__container{
-    .cards{
-        max-width: 29rem;
-    }
-}
 
 
 @media screen and (min-width: 768px){
 .guide__cards__container{
     .cards{
-        max-width: 25rem;
-        &:nth-child(odd){
-            margin-right: 3rem;
-        }
+        max-width: 29rem;
+        margin-right: 2rem;
     }
 }
 
 }
 @media screen and (min-width: 1200px){
-   
+    .guide__cards__container{
+    .cards{
+        max-width: 27rem;
+    }
+}
 }

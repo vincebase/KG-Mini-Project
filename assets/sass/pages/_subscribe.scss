@@ -1,22 +1,35 @@
+@import "../abstracts/variables";
 //subscribe
 #subscribe{
-    .row{
+        padding:0 2.3rem 10rem 2.3rem;
+    
+        .container{
+            background-color: $bg-subscribe-color;
+            border-radius: 2.4rem;
+            margin: 0 auto;
+            padding-left: 2.3rem;
+            padding-right: 1rem;
+        }
+        }
+        .row{
         margin-top: 0;
         padding: 5rem 0;
     }
-
-}
-
-.subscribe__primary-container{
-    background-color: $bg-subscribe-color;
-    border-radius: 2.4rem;
-    margin: 0 auto;
-}
 .subscribe__title{
     color: $white;
+    margin-bottom: 3.2rem;
+} 
+.subscribe__text-subtitle{
+    margin-bottom: 1.6rem;
+}
+.subscribe__description{
+    color: $white;
+    margin-bottom: 3rem;
 }
 
-
+.subcribe__btn{
+    width: 100%;
+}
 
 @media screen and (min-width: 768px){
 
@@ -25,6 +38,9 @@
 
 
 @media screen and (min-width: 1200px){
+    .subscribe__description{
+        width: 45ch;
+    }
     .subscribe__primary-container{
     
         max-width: 1296px;

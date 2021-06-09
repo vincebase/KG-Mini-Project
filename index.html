@@ -225,7 +225,7 @@
                 <div
                   class="
                     services__image-container
-                    column-2 column-md-4 column-xl-3
+                    column-2 column-md-3 column-xl-3
                     mr-14
                     mt-16 mt-30
                     bg-blue
@@ -429,7 +429,7 @@
         <div class="container px-135 pb-183">
           <div class="solution-primary-row__container row px-23">
             <div class="column column-md-12 column-xl-12">
-              <h5 class="h5">Solutions</h5>
+              <span class="h5">Solutions</span>
               <div class="solutions-text__container d-flex f-dir-col pb-52">
                 <h3 class="h3 mb-19">Benefits</h3>
                 <p class="solutions-text__description text-b">
@@ -489,19 +489,13 @@
         </div>
       </section>
       <!-- solution section starts here -->
-
-      <!-- wave bg -->
-      <div class="main-bg-wave"></div>
-      <div class="wave"></div>
-      <div class="wave"></div>
-
       <!-- how it works section starts here -->
       <div class="primary-gradient-bg">
         <section id="howItWorks">
           <div class="container">
             <div class="row pb-43 px-23">
               <div class="how-it-works__container column d-flex f-dir-col">
-                <h5 class="how-it-works__subtitle h5 mb-16">FOUR STEPS</h5>
+                <span class="how-it-works__subtitle h5 mb-16">FOUR STEPS</span>
                 <h3 class="how-it-works__title h3">How It Works</h3>
                 <div class="how-it-works__description text-b">
                   The sky was cloudless and of a deep dark blue. The spectacle
@@ -525,7 +519,7 @@
                 class="cards column column-md-6 column-xl-3 d-flex f-dir-col"
               >
                 <div class="d-flex jc-f-end">
-                  <div class="card__item-number d-flex jc-center ai-center">
+                  <div class="card__item-number d-flex jc-center ai-center guide-card-bg-blue">
                     <p class="card__item-number__text text">01</p>
                   </div>
                 </div>
@@ -581,7 +575,7 @@
                 class="cards column column-md-6 column-xl-3 d-flex f-dir-col"
               >
                 <div class="d-flex jc-f-end">
-                  <div class="card__item-number d-flex jc-center ai-center">
+                  <div class="card__item-number d-flex jc-center ai-center guide-card-bg-blue">
                     <p class="card__item-number__text text">04</p>
                   </div>
                 </div>
@@ -598,32 +592,28 @@
         <!-- how it works section ends here -->
 
         <!-- start now section starts here -->
-        <section id="startNow" class="mb-15">
+        <section id="startNow">
           <div class="container">
-            <div class="row px-23 pb-216">
-              <div class="column">
-                <div
-                  class="
-                    start-now__image-container
-                    d-flex
-                    jc-center
-                    ai-center
-                    mb-28
-                  "
-                >
-                  <img
-                    src="./assets/img/Group 10.png"
-                    alt="Start with us"
-                    class="start-now__image"
-                  />
-                </div>
+            <div class="row start-now__wrapper">
+              <div
+                class="
+                  start-now__image-container
+                  d-flex
+                  jc-center
+                  ai-center
+                  column-12
+                "
+              >
+                <img
+                  src="./assets/img/Group 10.png"
+                  alt="Start with us"
+                  class="start-now__image"
+                />
               </div>
-              <div class="column">
-                <h5 class="h5 mb-13">Start Now</h5>
-                <h3 class="start-now__text-title h3 mb-19 mb-19">
-                  Start In A Few Minutes
-                </h3>
-                <p class="text-b mb-11">
+              <div class="start-now__wrapper column-12">
+                <span class="start-now__subtitle h5">Start Now</span>
+                <h3 class="start-now__text-title h3">Start In A Few Minutes</h3>
+                <p class="start-now__description text-b">
                   The sky was cloudless and of a deep dark blue. The spectacle
                   before us was indeed sublime.
                 </p>
@@ -640,222 +630,224 @@
         <!-- start now section ends here -->
 
         <!-- blog section starts here -->
-        <section id="blog" class="pb-190">
+        <section id="blog">
           <div class="container">
-            <div class="row d-flex f-dir-col jc-center px-23 pb-144">
-              <h5 class="h5 mb-13">Our Blog</h5>
-              <h3 class="h3 mb-27">Latest Articles</h3>
-              <a
-                href="#blog"
-                class="article-btn__link btn btn-gradient-pink mb-64"
-              >
-                ALL BLOG
-              </a>
-
-              <div class="column column-md-4 column-xl-4">
-                <div class="cards-article">
-                  <div
-                    class="
-                      cards-article__image-container
-                      d-flex
-                      jc-center
-                      mb-34
-                    "
-                  >
-                    <img
-                      src="./assets/img/Invest-Safely.svg"
-                      alt="Invest Safely Article"
-                      class="cards-article__image"
-                    />
+            <div class="row blog-column__wrapper d-flex f-dir-col jc-center">
+              <div class="blog-top__wrapper">
+                <div class="blog__top-text-wrapper">
+                  <span class="blog__subtitle h5">Our Blog</span>
+                  <h3 class="blog__title h3">Latest Articles</h3>
                   </div>
-
-                  <h4 class="cards-article__caption h4">
-                    How to Invest Safely
-                  </h4>
-                </div>
+                  <a href="#blog" class="article-btn__link btn btn-gradient-pink">
+                    ALL BLOG
+                  </a>
+                
               </div>
-              <div class="column column-md-4 column-xl-4">
-                <div class="cards-article">
-                  <div
-                    class="
-                      cards-article__image-container
-                      mb-34
-                      d-flex
-                      jc-center
-                    "
-                  >
-                    <img
-                      src="./assets/img/2020-Prediction.svg"
-                      alt="2020 Prediction article about Crypto"
-                      class="cards-article__image"
-                    />
-                  </div>
+            
+              
+<div class="cards-article__wrapper d-flex jc-center">
+  <div class="cards-article column-12 column-md-6 column-xl-3">
+      <img
+        src="./assets/img/Invest-Safely.svg"
+        alt="Invest Safely Article"
+        class="cards-article__image"
+      />
+   
 
-                  <h4 class="cards-article__caption h4">
-                    2020 Crypto Predictions
-                  </h4>
-                </div>
-              </div>
+    <h4 class="cards-article__caption h4">How to Invest Safely</h4>
+  </div>
 
-              <div class="column column-md-4 column-xl-4">
-                <div class="cards-article">
-                  <div
-                    class="
-                      cards-article__image-container
-                      mb-34
-                      d-flex
-                      jc-center
-                    "
-                  >
-                    <img
-                      src="./assets/img/Top-wallets.svg"
-                      alt="Top Wallets Article"
-                      class="cards-article__image"
-                    />
-                  </div>
+  <div class="cards-article column-12 column-md-6 column-xl-3">
+    
+      <img
+        src="./assets/img/2020-Prediction.svg"
+        alt="2020 Prediction article about Crypto"
+        class="cards-article__image"
+      />
+  
 
-                  <h4 class="cards-article__caption h4">
-                    The Top Wallets of 2020
-                  </h4>
-                </div>
-              </div>
+    <h4 class="cards-article__caption h4">
+      2020 Crypto Predictions
+    </h4>
+  </div>
+
+  <div class="cards-article column-12 column-md-6 column-xl-3">
+  
+      <img
+        src="./assets/img/Top-wallets.svg"
+        alt="Top Wallets Article"
+        class="cards-article__image"
+      />
+
+  
+    <h4 class="cards-article__caption h4">
+      The Top Wallets of 2020
+    </h4>
+  </div>
+  <div class="cards-article column-12 column-md-6 column-xl-3">
+    
+      <img
+        src="./assets/img/Top-wallets.svg"
+        alt="Top Wallets Article"
+        class="cards-article__image"
+      />
+
+  
+    <h4 class="cards-article__caption h4">
+      The Top Wallets of 2020
+    </h4>
+  </div>
+ 
+</div>
+              
             </div>
           </div>
         </section>
         <!-- blog section ends here -->
+
+        <!-- subscribe section starts here -->
         <section id="subscribe">
-          <div class="subscribe__primary-container">
-            <div class="container px-23">
-              <div class="row ai-center">
-                <div
-                  class="column-12 column-md-12 column-xl-6 d-flex f-dir-col"
-                >
-                  <div class="subscribe__text-container jc-center">
-                    <h5 class="h5 mb-16">Newsletter</h5>
-                    <h3 class="subscribe__title h3 mb-32">Subscribe</h3>
-                    <p class="subscribe__description text-b">
-                      The sky was cloudless and of a deep dark blue. The
-                      spectacle before us was indeed sublime.
-                    </p>
+          <div class="container">
+            <div class="row ai-center">
+              <div
+                class="
+                  subscribe__text-container
+                  column-12 column-md-12 column-xl-6
+                  d-flex
+                  f-dir-col
+                "
+              >
+                <span class="subscribe__text-subtitle h5">Newsletter</span>
+                <h3 class="subscribe__title h3">Subscribe</h3>
+                <p class="subscribe__description text-b">
+                  The sky was cloudless and of a deep dark blue. The spectacle
+                  before us was indeed sublime.
+                </p>
+              </div>
+
+              <div class="subscribe-column column-12 column-md-12 column-xl-6">
+                <div class="subscribe__input-container__btn">
+                  <div class="input-container input-email">
+                    <input
+                      type="email"
+                      name="Email"
+                      id="email"
+                      placeholder="Your Email"
+                      class="subscribe__input-field mb-16"
+                    />
                   </div>
-                </div>
 
-                <div
-                  class="subscribe-column column-12 column-md-12 column-xl-6"
-                >
-                  <div class="subscribe__input-container__btn">
-                    <div class="input-container input-email">
-                      <input
-                        type="email"
-                        name="Email"
-                        id="email"
-                        placeholder="Your Email"
-                        class="subscribe__input-field mb-16"
-                      />
-                    </div>
-
-                    <div>
-                      <a href="#" class="subcribe__btn btn btn-gradient-pink"
-                        >Subscribe</a
-                      >
-                    </div>
+                  <div>
+                    <a href="#" class="subcribe__btn btn btn-gradient-pink"
+                      >Subscribe</a
+                    >
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
+        <!-- subscribe section ends here -->
 
         <!-- footer section starts here -->
         <section id="footer">
           <div class="container">
-            <div class="row px-23">
-              <div class="column">
-                <a href="#">
-                  <div class="footer__logo-container mb-51">
-                    <img
-                      src="./assets/img/cryptoverselogo.svg"
-                      alt="Cryptoverse logo"
-                      class="footer-logo__image"
-                    />
+            <div class="row footer-columns__wrapper d-flex jc-sp-bw">
+              <div class="footer__logo-container column-12 column-lg-3">
+                <img
+                  src="./assets/img/cryptoverselogo.svg"
+                  alt="Cryptoverse logo"
+                  class="footer-logo__image"
+                />
+              </div>
+
+              <div class="footer__menu-links column-12 column-lg-3">
+                <span class="footer__menu-links__category h5">Menu</span>
+                <ul class="menu-links__container">
+                  <li><a href="#footer" class="menu-links text">About</a></li>
+                  <li>
+                    <a href="#footer" class="menu-links text">Features</a>
+                  </li>
+                  <li><a href="#footer" class="menu-links text">Blog</a></li>
+                  <li>
+                    <a href="#footer" class="menu-links text">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__feature-links column-12 column-lg-3">
+                <h5 class="footer__menu-links__category h5">Feature</h5>
+                <ul class="feature-links__container">
+                  <li>
+                    <a href="#footer" class="feature-links text">Quick </a>
+                  </li>
+                  <li>
+                    <a href="#footer" class="feature-links text"> Secure</a>
+                  </li>
+                  <li>
+                    <a href="#footer" class="feature-links text">Private</a>
+                  </li>
+                  <li>
+                    <a href="#footer" class="feature-links text">Integration</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__socmed-icons d-flex column-12 column-lg-3">
+                <a href="#" class="socmed-icon__links">
+                  <div class="socmed-icons__container bg-blue">
+                    <i class="fab fa-facebook-f"></i>
                   </div>
                 </a>
-                <div class="footer__menu-links mb-46">
-                  <h5 class="h5 mb-34">Menu</h5>
-                  <ul class="menu-links__container">
-                    <li><a href="#footer" class="menu-links text">About</a></li>
-                    <li>
-                      <a href="#footer" class="menu-links text">Features</a>
-                    </li>
-                    <li><a href="#footer" class="menu-links text">Blog</a></li>
-                    <li>
-                      <a href="#footer" class="menu-links text">Contact</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="footer__feature-links mb-54">
-                  <h5 class="h5 mb-34">Feature</h5>
-                  <ul class="feature-links__container">
-                    <li>
-                      <a href="#footer" class="feature-links text">Quick </a>
-                    </li>
-                    <li>
-                      <a href="#footer" class="feature-links text"> Secure</a>
-                    </li>
-                    <li>
-                      <a href="#footer" class="feature-links text">Private</a>
-                    </li>
-                    <li>
-                      <a href="#footer" class="feature-links text"
-                        >Integration</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-                <div class="footer__socmed-icons mb-96 d-flex">
-                  <a href="#" class="socmed-icon__links">
-                    <div class="socmed-icons__container bg-blue">
-                      <i class="fab fa-facebook-f"></i>
-                    </div>
-                  </a>
-                  <a href="#" class="socmed-icon__links">
-                    <div class="socmed-icons__container bg-pink">
-                      <i class="fab fa-twitter"></i>
-                    </div>
-                  </a>
-                  <a href="#" class="socmed-icon__links">
-                    <div class="socmed-icons__container insta-bg">
-                      <i class="fab fa-instagram"></i>
-                    </div>
-                  </a>
-                </div>
+                <a href="#" class="socmed-icon__links">
+                  <div class="socmed-icons__container bg-pink">
+                    <i class="fab fa-twitter"></i>
+                  </div>
+                </a>
+                <a href="#" class="socmed-icon__links">
+                  <div class="socmed-icons__container insta-bg">
+                    <i class="fab fa-instagram"></i>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
           <div class="footer__bar-container">
             <div class="container">
-              <div class="row">
-                <div class="footer-bar__container d-flex jc-center">
-                  <p class="footer-bar__copyrights text">
-                    Copyright © 2020 Laaqiq. All Rights Reserved.
-                  </p>
+              <div class="row footer-bar__container d-flex ai-center jc-sp-bw">
+                <p
+                  class="
+                    footer-bar__copyrights
+                    text
+                    d-flex
+                    jc-center
+                    column-sm-12 column-md-8
+                  "
+                >
+                  Copyright © 2020 Laaqiq. All Rights Reserved.
+                </p>
+                <a
+                  href="#"
+                  class="
+                    terms-and-policy__links
+                    text
+                    d-flex
+                    jc-center
+                    column-sm-6 column-md-2
+                  "
+                >
+                  Terms and Policy
+                </a>
 
-                  <div
-                    class="footer-bar__terms__policy__links-container d-flex"
-                  >
-                    <p class="footer-bar__terms__policy--title text mr-77">
-                      <a href="#" class="terms-and-policy__links">
-                        Terms of Use
-                      </a>
-                    </p>
-
-                    <p class="footer-bar__terms__policy--title text">
-                      <a href="#" class="terms-and-policy__links">
-                        Privacy Policy
-                      </a>
-                    </p>
-                  </div>
-                </div>
+                <a
+                  href="#"
+                  class="
+                    terms-and-policy__links
+                    text
+                    d-flex
+                    jc-center
+                    column-sm-6 column-md-2
+                  "
+                  >Privacy Policy</a
+                >
               </div>
             </div>
           </div>
@@ -863,19 +855,5 @@
       </div>
     </main>
     <!-- footer section ends here -->
-
-    <script>
-      function activateSideNav() {
-        document.getElementById("hamburger__side-nav").style.width = "250px";
-        document.getElementById("hamburger-btn").style.marginLeft = "250px";
-        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-      }
-
-      function exitSideNav() {
-        document.getElementById("hamburger__side-nav").style.width = "0";
-        document.getElementById("hamburger-btn").style.marginLeft = "0";
-        document.body.style.backgroundColor = "white";
-      }
-    </script>
   </body>
 </html>

@@ -1,18 +1,40 @@
 
+
+.footer-columns__wrapper{
+  padding-left: 2.3rem;
+  padding-right: 2.3rem;
+  margin-top: 3rem;
+}
+
 .footer__logo-container {
-  max-width: 20rem;
+  width: 20rem;
   height: 4.8rem;
+  margin-bottom: 5.1rem;
 }
 .footer-logo__image {
   width: 100%;
 }
+.footer__feature-links{
+  margin-bottom: 5.4rem;
+}
+.footer__menu-links__category{
+  margin-bottom: 3.4rem;
+  
+}
+
 
 .socmed-icon__links:not(:last-child) {
   margin-right: 0.8rem;
 }
+.footer__socmed-icons{
+  margin-bottom: 9.6rem;
+}
+.footer__menu-links{
+  margin-bottom: 4.6rem;
+}
 .socmed-icons__container {
-  max-width: 4.8rem;
-  max-height: 4.8rem;
+  width: 4.8rem;
+  height: 4.8rem;
   padding: 1.6rem;
   color: $white;
   border-radius: 50%;
@@ -35,11 +57,30 @@
 
 .footer__bar-container{
     background-color: #131c2d;
-
+    padding: 4.7rem 2.7rem 3.8rem 2.7rem;
 }
 
 
 @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 992px){
+  //  d-flex f-dir-col ai-center
+  .footer__feature-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__menu-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__menu-links__category{
+    margin-right: 2.5rem;
+  }
+  .footer__socmed-icons{
+    justify-content: center;
+  }
 }
 @media screen and (min-width: 1200px) {
 
