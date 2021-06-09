@@ -1,24 +1,38 @@
+
 .cryptocurrency-text__title{
     width: 6ch;
 }
-.cryptocurrency-row{
-    margin-top: 0;
-}
-.cryptocurrency-image{
-    margin-top: -10rem;
-}
 
+.cryptocurrency-image{
+    width: 32rem;
+    object-fit: contain;
+}
+.cryptocurrency-text__container{
+    padding: 0 2.3rem;
+}
+.cryptocurrency-image__container{
+    justify-content: center;
+}
+.cryptocurrency-row.row{
+    padding: 0 2.3rem;
+}    
 @media screen and (min-width: 768px){
-    .cryptocurrency-column{
+    #cryptocurrency{
+        padding-top: 5rem;
+    }
+    .cryptocurrency-image__container{
         order: 0;
-        .cryptocurrency-image{
-            max-width: 36rem;
-            margin-top: -20rem;
-        }
-    
+        display: flex;
+        justify-content: flex-start;
+    }
+      
+    .cryptocurrency-image{
+        max-width: 34rem;
+        
     }
     .cryptocurrency-text__container{
         order: 1;
+        padding: 0 4.3rem;
         .cryptocurrency-text__sub-title{
             padding-top: 10rem;
         }
@@ -31,5 +45,10 @@
     }
 }
 @media screen and (min-width: 1200px){
-   
+    .cryptocurrency-image{
+        min-width: 57rem;
+        height: 50rem;
+        object-fit: contain;
+    }
+
 }

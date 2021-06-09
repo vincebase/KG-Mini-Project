@@ -1,22 +1,29 @@
 //solution
 #solutions{
-
-}
-.bg-gradient{
     background: $blue-gray;
-    padding-top: 1rem;
-}
-.solution-container__carousel{
-    border-radius: 2.4rem;
-    background-color: $white;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-top: 5rem;
-    z-index: 999;
-    &.column{
-        z-index: 999;
+    .container{
+        padding-bottom: 5rem;
+      
     }
 }
+.solutions-text__title{
+    margin-bottom: 1.9rem;
+}
+
+.solutions-text__title,
+.solutions-text__description{
+    color: $white;
+}
+
+
+.solution-container__carousel.row{
+    border-radius: 2.4rem;
+    background-color: $white;
+   margin: auto 1rem;
+
+    
+}
+
 
 .icon__container{
     padding: 2.3rem 2.7rem 2.3rem 2.604rem;
@@ -27,66 +34,42 @@
 }
 
 .solution__carousel__description{
-    max-width: 30ch;
+    width: 28ch;
 }
 
-.carousel-btn{
-    text-decoration: none;
-}
+
 .solution__carousel__img{
     max-width: 30rem;
     height: 31rem;
 }
-.carousel-btn__container{
 
-    .carousel-btn{
-        display: inline-block;
-        width: 1.6rem;
-        height: 1.6rem;
-        border-radius: 50%;
-        background-color: $light-blue-bg;
-        &:hover{
-            background-color: $btn-blue;
-        }
-    }
-
-}
-.bg-img-mix-wave{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-position: fixed;
-    background-size: cover;
-    overflow-y: hidden;
-    width: 100%;
-    z-index: 0;
-    margin-top: -2rem;
-
-}
 
 
 
 
 
 @media screen and (min-width: 576px){
-    #solutions{
-        background: $bluegray-gradient;
-    }
-    
-    .bg-img-mix-wave{
-        display: none;
-    }
     .solution-primary-row__container{
         margin-top: -30rem;
         z-index: 99;
-        
     }
-    .bg-gradient{
-        background: none;
-    }
+    
 }
 @media screen and (min-width: 768px){
-
+    .solution__carousel__description{
+        width: 45ch;
+    }
+    .solution__carousel__img{
+        max-width: 34rem;
+        height: 34rem;
+    }
+    
+    
+    
 }
 @media screen and (min-width: 1200px){
-   
+    .solution-container__carousel.row{
+        padding: 5rem 5rem;
+        
+    }
 }

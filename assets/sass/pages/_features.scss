@@ -1,15 +1,26 @@
 #features{
     background-color: $light-blue-bg;
     overflow-y: hidden;
+    position: relative;
 }
 
+.bg-wave-second{
+    width: 100%;
+    max-height: 30rem;
+    position: absolute;
+    top: -1%;
+    left: 0;
+
+}
+
+.features-container>.row{
+    padding: 0 2.3rem;
+}
 .features-text__container{
     text-align: center;
+    padding-top: 10rem;
 }
-.features-text__title {
-    max-width: 12ch;
-    hyphens: auto;
-}
+
 .cards{
     max-width: 33.8rem;
     border-radius: 2.4rem;
@@ -42,14 +53,19 @@
     height: 100%;
 
 }
+.features-text__title{
+    hyphens: auto;
+    max-width: 15ch;
+}
 .cards__text{
     padding: 3.4rem 3.2rem 3.8rem 3.2rem;
 }
 @media screen and (min-width: 768px){
     //features
-.features-text__title{
-    hyphens: none;
-    max-width: 15ch;
+
+.features-text__container{
+    padding-top: 30rem;
+    
 }
 
 

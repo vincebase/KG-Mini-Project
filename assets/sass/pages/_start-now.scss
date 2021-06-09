@@ -30,9 +30,23 @@ margin-bottom: 1.5rem;
 
 
 @media screen and (min-width: 768px){
+    .start-now__image{
+    width: 35rem;
+    height: 35rem;
+}
+.solution__carousel__description{
+    width: 50ch;
+}
 
 }
 @media screen and (min-width: 1200px){
+    .start-now__wrapper{
+        padding-top: 20rem;
+    }
+        .start-now__image{
+        width: 50rem;
+        height: 50rem;
+    }
    
 }
 

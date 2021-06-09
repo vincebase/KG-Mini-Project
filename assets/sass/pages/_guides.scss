@@ -1,6 +1,7 @@
 //How it works
 
 .guide__cards__container{
+   padding: 0;
     .cards{
         max-width: 27rem;
         padding: 3.2rem 3.2rem 3.8rem 3.2rem;
@@ -42,12 +43,27 @@
         margin-right: 2rem;
     }
 }
+.how-it-works__description{
+    width: 40ch;
+}
 
 }
 @media screen and (min-width: 1200px){
     .guide__cards__container{
     .cards{
         max-width: 27rem;
+        &:first-child{
+            margin-top: 5rem;
+        }
+        &:nth-of-type(2){
+            margin-top: 15rem;
+        }
+        &:nth-of-type(3){
+            margin-top: -2rem;
+        }
+        &:last-child{
+            margin-top: 10rem;
+        }
     }
 }
 }

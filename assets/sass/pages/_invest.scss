@@ -1,6 +1,7 @@
 //invest
 #invest{
     background-color:$light-blue-bg;
+    position:relative;
     z-index: -10;
 }
 .invest-row{
@@ -14,7 +15,15 @@
     max-height: 31.8rem;
 }
 
-
+.bg-mix-wave{
+    width: 100%;
+    max-height: 20rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -5;
+    
+}
 
 
 @media screen and(min-width: 576px){

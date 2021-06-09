@@ -38,52 +38,30 @@
   <body>
     <!-- header starts here -->
     <header id="header" class="w-100 px-23">
-      <div class="nav-container d-flex jc-sp-bw">
-        <a href="#"
+      <div class="nav-container d-flex">
+        <a href="#crypto"
           ><img
             class="nav-logo"
             src="./assets/img/cryptoverselogo.svg"
             alt="Cryptoverse logo"
         /></a>
-        <nav class="pt-16">
-          <ul class="nav-links__container d-none">
-            <li><a href="#" class="nav-links text pr-47 pr-27">About</a></li>
-            <li><a href="#" class="nav-links text pr-47 pr-27">Features</a></li>
-            <li><a href="#" class="nav-links text pr-47 pr-27">Blog</a></li>
-            <li><a href="#" class="nav-links text">Contact</a></li>
-          </ul>
+        
+          <nav class="d-flex d-none ai-center">
+            <ul class="nav-links__container d-none mr-9">
+              <li><a href="#" class="nav-links text pr-47 pr-27">About</a></li>
+              <li><a href="#" class="nav-links text pr-47 pr-27">Features</a></li>
+              <li><a href="#" class="nav-links text pr-47 pr-27">Blog</a></li>
+              <li><a href="#" class="nav-links text">Contact</a></li>
+            </ul>
+         
+  
+          <div class="btn-containe ">
+            <a href="#" class="nav-btn__links btn">Login</a>
+            <a href="#" class="nav-btn__links btn btn-outline">Sign Up</a>
+          </div>
         </nav>
-
-        <div class="btn-container d-none pt-8">
-          <a href="#" class="nav-btn__links btn">Login</a>
-          <a href="#" class="nav-btn__links btn btn-outline">Sign Up</a>
-        </div>
-
-        <div
-          id="hamburger-btn"
-          class="hamburger__container d-flex jc-center ai-center"
-          onclick="activateSideNav()"
-        >
-          <a href="javascript:void(0);" class="hamburger__icon">
-            <i class="fas fa-bars"></i>
-          </a>
-        </div>
-
-        <div
-          id="hamburger__side-nav"
-          class="hamburger__side-nav__container d-none"
-        >
-          <a
-            href="javascript:void(0);"
-            class="hamburger__links deactivate"
-            onclick="exitSideNav()"
-            >&times;</a
-          >
-          <a href="#about" class="hamburger__links">About</a>
-          <a href="#features" class="hamburger__links">Features</a>
-          <a href="#blog" class="hamburger__links">Blog</a>
-          <a href="#contact" class="hamburger__links">Contact</a>
-        </div>
+    
+        
       </div>
     </header>
 
@@ -96,7 +74,7 @@
               class="crypto-column column column-md-6 column-xl-6 mb-24 px-67"
             >
               <div
-                class="crypto-image__container d-flex jc-center ai-center py-44"
+                class="crypto-image__container d-flex ai-center"
               >
                 <img
                   src="./assets/img/Group 6.png"
@@ -137,14 +115,14 @@
       <!-- cryptocurrency section starts here -->
       <section id="cryptocurrency" class="cryptocurrency">
         <div class="cryptocurrency-container container pt-192 px-135 pb-288">
-          <div class="cryptocurrency-row row px-23 pt-88 mt-30 ml-15">
+          <div class="cryptocurrency-row row">
             <div
               class="
-                cryptocurrency-column
-                column column-md-6 column-xl-6
+                cryptocurrency-image__container
+                column-12 column-md-6 column-xl-6
                 mb-24 mb-19
                 d-flex
-                jc-center
+                jc-f-end
                 ai-center
               "
             >
@@ -156,12 +134,8 @@
             </div>
 
             <div
-              class="
-                cryptocurrency-text__container
+              class="column-12
                 column-md-6 column-xl-6
-                pl-130
-                pb-112
-                px-23 px-44
               "
             >
               <h5 class="cryptocurrency-text__sub-title h5 mb-13">
@@ -191,10 +165,8 @@
               class="
                 services-image__container
                 column column-md-6 column-xl-6
-                pl-35
                 mb-56
                 d-flex
-                jc-center
                 ai-center
               "
             >
@@ -269,7 +241,8 @@
 
       <!-- feature section starts here -->
       <section id="features">
-        <div class="features-container container d-flex f-dir-col ai-center">
+        <img src="./assets/img/bg-wave2.png" alt="" class="bg-wave-second">
+        <div class="features-container container">
           <div class="row">
             <div
               class="
@@ -279,7 +252,6 @@
                 f-dir-col
                 jc-center
                 ai-center
-                pt-162
                 px-23
               "
             >
@@ -380,6 +352,7 @@
 
       <!-- invest section starts here -->
       <section id="invest">
+        
         <div class="invest-container container">
           <div class="invest-row row pl-135 pb-261 px-23">
             <div
@@ -420,9 +393,16 @@
             </div>
           </div>
         </div>
+        <img
+        src="./assets/img/bg-mix-wave.png"
+        alt=""
+        class="bg-mix-wave"
+      />
       </section>
       <!-- invest section ends here -->
-
+    
+      
+    
       <!-- solution section starts here -->
 
       <section id="solutions">
@@ -430,8 +410,8 @@
           <div class="solution-primary-row__container row px-23">
             <div class="column column-md-12 column-xl-12">
               <span class="h5">Solutions</span>
-              <div class="solutions-text__container d-flex f-dir-col pb-52">
-                <h3 class="h3 mb-19">Benefits</h3>
+              <div class="solutions-text__container d-flex f-dir-col">
+                <h3 class="solutions-text__title h3">Benefits</h3>
                 <p class="solutions-text__description text-b">
                   The sky was cloudless and of a deep dark blue. The spectacle
                   before us was indeed sublime.
@@ -440,14 +420,9 @@
             </div>
           </div>
 
-          <div class="bg-gradient">
-            <img
-              src="./assets/img/bg-mix-wave.png"
-              alt=""
-              class="bg-img-mix-wave"
-            />
+          
             <div
-              class="solution-container__carousel row pt-80 pl-100 pb-64 px-23"
+              class="solution-container__carousel row"
             >
               <div class="column column-xl-6 d-flex f-dir-col">
                 <div class="icon__container mb-34 mb-31">
@@ -457,10 +432,10 @@
                     class="icon"
                   />
                 </div>
-                <h3 class="solution__carousel__title h3 mb-32 mb-19">
+                <h3 class="solution__carousel__title h3 mb-32 ">
                   Safe Storage
                 </h3>
-                <p class="solution__carousel__description text-b mb-84">
+                <p class="solution__carousel__description text-b ">
                   The sky was cloudless and of a deep dark blue. The spectacle
                   before us was indeed sublime.
                 </p>
@@ -475,14 +450,6 @@
                     class="solution__carousel__img mb-18"
                   />
                 </div>
-                <div
-                  class="carousel-btn__container d-flex f-dir-row jc-sp-bw"
-                  id="carousel-btn"
-                >
-                  <a href="#solutions" class="carousel-btn mr-16"></a>
-                  <a href="#solutions" class="carousel-btn mr-16"></a>
-                  <a href="#solutions" class="carousel-btn"></a>
-                </div>
               </div>
             </div>
           </div>
@@ -493,7 +460,7 @@
       <div class="primary-gradient-bg">
         <section id="howItWorks">
           <div class="container">
-            <div class="row pb-43 px-23">
+       
               <div class="how-it-works__container column d-flex f-dir-col">
                 <span class="how-it-works__subtitle h5 mb-16">FOUR STEPS</span>
                 <h3 class="how-it-works__title h3">How It Works</h3>
@@ -502,17 +469,13 @@
                   before us was indeed sublime.
                 </div>
               </div>
-            </div>
+          
 
             <div
-              class="
+              class="row
                 guide__cards__container
-                row
-                px-135
                 d-flex
                 jc-center
-                px-23
-                pb-199
               "
             >
               <div
@@ -602,6 +565,7 @@
                   jc-center
                   ai-center
                   column-12
+                  column-xl-6
                 "
               >
                 <img
@@ -610,7 +574,7 @@
                   class="start-now__image"
                 />
               </div>
-              <div class="start-now__wrapper column-12">
+              <div class="start-now__wrapper column-12 column-xl-6">
                 <span class="start-now__subtitle h5">Start Now</span>
                 <h3 class="start-now__text-title h3">Start In A Few Minutes</h3>
                 <p class="start-now__description text-b">
@@ -818,7 +782,7 @@
                     footer-bar__copyrights
                     text
                     d-flex
-                    jc-center
+                    jc-f-start
                     column-sm-12 column-md-8
                   "
                 >

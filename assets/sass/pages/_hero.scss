@@ -6,7 +6,6 @@
 .services-text__description,
 .features-text__description,
 .cards__link,
-.solutions-text__description,
 .solution__carousel__description{
   color: $text-blck;
 }
@@ -34,9 +33,7 @@ main,
   overflow-x: hidden;
 }
 //image
-.crypto-image__img,
-.cryptocurrency-image,
-.services__image {
+.crypto-image__img {
   max-width: 35rem;
   object-fit: cover;
 }
@@ -58,25 +55,25 @@ main,
   background-size: cover;
   overflow-y: hidden;
   padding-bottom: 5rem;
+
 }
 .crypto-container {
   position: relative;
 }
 .crypto-text__container{
   padding-bottom: 10.3rem;
+  &span{
+    color: $pink;
+  }
 }
 
-.crypto-text__container span {
-  color: $pink;
-}
 .h2 {
   width: 8ch;
   hyphens: auto;
   color: $white;
 }
 .crypto-image__container{
-  margin-top: 4rem;
-  margin-bottom: -12rem;
+
 }
 .hero-text__description{
   color: $white
@@ -112,7 +109,7 @@ main,
   padding-bottom: 10rem;
   }
   .crypto-image__img {
-    max-width: 39rem;
+    max-width: 35rem;
     object-fit: contain;
     margin-top: 10rem;
   }
@@ -145,19 +142,14 @@ main,
   }
 }
 @media screen and (min-width: 1200px) {
- 
+ #crypto{
+   padding-bottom: 10rem;
+ }
+
+ .crypto-image__img {
+  min-width: 54rem;
+  max-height: 45rem;
+
 }
 
-//------------------WAVE-----------------//
-.my-svg {
-  position: absolute;
-}
-.wave0 {
-  top: 0;
-  left: 0;
-}
-.wave1 {
-  top: 0;
-  left: 0;
-  z-index: 3;
 }

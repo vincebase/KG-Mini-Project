@@ -196,10 +196,6 @@ html {
   display: grid;
 }
 
-.d-none {
-  display: none;
-}
-
 .f-dir-row {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -514,6 +510,12 @@ html {
 @media screen and (min-width: 1200px) {
   .pb-190 {
     padding-bottom: 19rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .d-none {
+    display: none;
   }
 }
 
@@ -832,55 +834,12 @@ html {
   height: 6rem;
 }
 
-#header .hamburger__container {
-  border-radius: 50%;
-  margin-top: .8rem;
-  border: 0.1rem solid #ffffff3a;
-  width: 4.8rem;
-  height: 4.8rem;
-}
-
-#header .hamburger__container .fas {
-  font-size: 1.5rem;
-  color: #ffffff;
-}
-
-#header .hamburger__side-nav__container {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: #FFFFFF;
-  overflow-x: hidden;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  padding-top: 6rem;
-}
-
-#header .hamburger__side-nav__container .hamburger__links a {
-  padding: 0.8rem 0.8rem 0.8rem 3.2rem;
-  font-size: 1.3rem;
-  color: #333333;
-  display: block;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-#header .hamburger__side-nav__container .hamburger__links a.deactivate {
-  position: absolute;
-  top: 0;
-  right: 2.5rem;
-  font-size: 3.6rem;
-  margin-left: 5rem;
-}
-
-#header .hamburger__side-nav__container .hamburger__links a:hover {
-  color: #d8d1c4;
-}
-
 @media screen and (min-width: 768px) {
+  .nav-container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .nav-links__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -904,18 +863,21 @@ html {
   .btn-container .nav-btn__links:hover {
     color: #ffffff50;
   }
-  .hamburger__container {
-    display: none;
-  }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   .nav-logo {
     margin-left: 4.45rem;
+    margin-right: 4.45rem;
+  }
+  .nav-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
-.footer-columns__wrapper {
+.row.footer-columns__wrapper {
   padding-left: 2.3rem;
   padding-right: 2.3rem;
   margin-top: 3rem;
@@ -1024,7 +986,7 @@ html {
   font-family: "Gruppo", cursive;
   font-size: 1.8rem;
   font-weight: 400;
-  padding: 1.5rem 2.201rem 1.6rem 2.29rem;
+  padding: 1rem 2.201rem 1rem 2.29rem;
   background-color: transparent;
   text-transform: uppercase;
   text-align: center;
@@ -1070,7 +1032,6 @@ html {
 .services-text__description,
 .features-text__description,
 .cards__link,
-.solutions-text__description,
 .solution__carousel__description {
   color: #333333;
 }
@@ -1096,9 +1057,7 @@ main,
   overflow-x: hidden;
 }
 
-.crypto-image__img,
-.cryptocurrency-image,
-.services__image {
+.crypto-image__img {
   max-width: 35rem;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1123,7 +1082,7 @@ main,
   padding-bottom: 10.3rem;
 }
 
-.crypto-text__container span {
+.crypto-text__containerspan {
   color: #DD668C;
 }
 
@@ -1133,11 +1092,6 @@ main,
       -ms-hyphens: auto;
           hyphens: auto;
   color: #ffffff;
-}
-
-.crypto-image__container {
-  margin-top: 4rem;
-  margin-bottom: -12rem;
 }
 
 .hero-text__description {
@@ -1177,7 +1131,7 @@ main,
     padding-bottom: 10rem;
   }
   .crypto-image__img {
-    max-width: 39rem;
+    max-width: 35rem;
     -o-object-fit: contain;
        object-fit: contain;
     margin-top: 10rem;
@@ -1213,47 +1167,63 @@ main,
   }
 }
 
-.my-svg {
-  position: absolute;
-}
-
-.wave0 {
-  top: 0;
-  left: 0;
-}
-
-.wave1 {
-  top: 0;
-  left: 0;
-  z-index: 3;
+@media screen and (min-width: 1200px) {
+  #crypto {
+    padding-bottom: 10rem;
+  }
+  .crypto-image__img {
+    min-width: 54rem;
+    max-height: 45rem;
+  }
 }
 
 .cryptocurrency-text__title {
   width: 6ch;
 }
 
-.cryptocurrency-row {
-  margin-top: 0;
+.cryptocurrency-image {
+  width: 32rem;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
-.cryptocurrency-image {
-  margin-top: -10rem;
+.cryptocurrency-text__container {
+  padding: 0 2.3rem;
+}
+
+.cryptocurrency-image__container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cryptocurrency-row.row {
+  padding: 0 2.3rem;
 }
 
 @media screen and (min-width: 768px) {
-  .cryptocurrency-column {
+  #cryptocurrency {
+    padding-top: 5rem;
+  }
+  .cryptocurrency-image__container {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
-  .cryptocurrency-column .cryptocurrency-image {
-    max-width: 36rem;
-    margin-top: -20rem;
+  .cryptocurrency-image {
+    max-width: 34rem;
   }
   .cryptocurrency-text__container {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    padding: 0 4.3rem;
   }
   .cryptocurrency-text__container .cryptocurrency-text__sub-title {
     padding-top: 10rem;
@@ -1266,14 +1236,25 @@ main,
   }
 }
 
-.services__image-container {
-  width: 8.6rem;
-  height: 8.6rem;
-  border-radius: 2.4rem;
+@media screen and (min-width: 1200px) {
+  .cryptocurrency-image {
+    min-width: 57rem;
+    height: 50rem;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+
+.services__image {
+  max-width: 35rem;
 }
 
 .services-text__title {
   width: 10ch;
+}
+
+.services__row-footer.row {
+  padding: 0 2.3rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -1291,31 +1272,37 @@ main,
             order: 1;
   }
   .services-image__container .services__image {
-    min-width: 40rem;
+    width: 35rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .services__image {
-    width: 40rem;
-    height: 40rem;
+    min-width: 57rem;
   }
 }
 
 #features {
   background-color: #D7E2FC;
   overflow-y: hidden;
+  position: relative;
+}
+
+.bg-wave-second {
+  width: 100%;
+  max-height: 30rem;
+  position: absolute;
+  top: -1%;
+  left: 0;
+}
+
+.features-container > .row {
+  padding: 0 2.3rem;
 }
 
 .features-text__container {
   text-align: center;
-}
-
-.features-text__title {
-  max-width: 12ch;
-  -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
+  padding-top: 10rem;
 }
 
 .cards {
@@ -1352,16 +1339,20 @@ main,
   height: 100%;
 }
 
+.features-text__title {
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  max-width: 15ch;
+}
+
 .cards__text {
   padding: 3.4rem 3.2rem 3.8rem 3.2rem;
 }
 
 @media screen and (min-width: 768px) {
-  .features-text__title {
-    -webkit-hyphens: none;
-        -ms-hyphens: none;
-            hyphens: none;
-    max-width: 15ch;
+  .features-text__container {
+    padding-top: 30rem;
   }
 }
 
@@ -1385,6 +1376,7 @@ main,
 
 #invest {
   background-color: #D7E2FC;
+  position: relative;
   z-index: -10;
 }
 
@@ -1399,6 +1391,15 @@ main,
 .invest-image__img {
   max-width: 30rem;
   max-height: 31.8rem;
+}
+
+.bg-mix-wave {
+  width: 100%;
+  max-height: 20rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -5;
 }
 
 @media screen and (min-width: 576px) {
@@ -1416,22 +1417,27 @@ main,
   }
 }
 
-.bg-gradient {
+#solutions {
   background: #455270;
-  padding-top: 1rem;
 }
 
-.solution-container__carousel {
+#solutions .container {
+  padding-bottom: 5rem;
+}
+
+.solutions-text__title {
+  margin-bottom: 1.9rem;
+}
+
+.solutions-text__title,
+.solutions-text__description {
+  color: #ffffff;
+}
+
+.solution-container__carousel.row {
   border-radius: 2.4rem;
   background-color: #ffffff;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-top: 5rem;
-  z-index: 999;
-}
-
-.solution-container__carousel.column {
-  z-index: 999;
+  margin: auto 1rem;
 }
 
 .icon__container {
@@ -1443,11 +1449,7 @@ main,
 }
 
 .solution__carousel__description {
-  max-width: 30ch;
-}
-
-.carousel-btn {
-  text-decoration: none;
+  width: 28ch;
 }
 
 .solution__carousel__img {
@@ -1455,44 +1457,31 @@ main,
   height: 31rem;
 }
 
-.carousel-btn__container .carousel-btn {
-  display: inline-block;
-  width: 1.6rem;
-  height: 1.6rem;
-  border-radius: 50%;
-  background-color: #D7E2FC;
-}
-
-.carousel-btn__container .carousel-btn:hover {
-  background-color: #728CF7;
-}
-
-.bg-img-mix-wave {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-position: fixed;
-  background-size: cover;
-  overflow-y: hidden;
-  width: 100%;
-  z-index: 0;
-  margin-top: -2rem;
-}
-
 @media screen and (min-width: 576px) {
-  #solutions {
-    background: -webkit-gradient(linear, left top, left bottom, from(#455270), to(#1A253B));
-    background: linear-gradient(180deg, #455270 0%, #1A253B 100%);
-  }
-  .bg-img-mix-wave {
-    display: none;
-  }
   .solution-primary-row__container {
     margin-top: -30rem;
     z-index: 99;
   }
-  .bg-gradient {
-    background: none;
+}
+
+@media screen and (min-width: 768px) {
+  .solution__carousel__description {
+    width: 45ch;
   }
+  .solution__carousel__img {
+    max-width: 34rem;
+    height: 34rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .solution-container__carousel.row {
+    padding: 5rem 5rem;
+  }
+}
+
+.guide__cards__container {
+  padding: 0;
 }
 
 .guide__cards__container .cards {
@@ -1537,11 +1526,26 @@ main,
     max-width: 29rem;
     margin-right: 2rem;
   }
+  .how-it-works__description {
+    width: 40ch;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .guide__cards__container .cards {
     max-width: 27rem;
+  }
+  .guide__cards__container .cards:first-child {
+    margin-top: 5rem;
+  }
+  .guide__cards__container .cards:nth-of-type(2) {
+    margin-top: 15rem;
+  }
+  .guide__cards__container .cards:nth-of-type(3) {
+    margin-top: -2rem;
+  }
+  .guide__cards__container .cards:last-child {
+    margin-top: 10rem;
   }
 }
 
@@ -1578,6 +1582,26 @@ main,
 .start-now__login__btn,
 .start-now__description {
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .start-now__image {
+    width: 35rem;
+    height: 35rem;
+  }
+  .solution__carousel__description {
+    width: 50ch;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .start-now__wrapper {
+    padding-top: 20rem;
+  }
+  .start-now__image {
+    width: 50rem;
+    height: 50rem;
+  }
 }
 
 #blog {

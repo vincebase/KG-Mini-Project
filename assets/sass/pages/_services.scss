@@ -1,13 +1,13 @@
-.services__image-container{
-    width: 8.6rem;
-    height: 8.6rem;
-    border-radius: 2.4rem;
+.services__image{
+    max-width: 35rem;
 }
 
 .services-text__title{
     width: 10ch;
 }
-
+.services__row-footer.row{
+    padding: 0 2.3rem;
+}
 
 @media screen and (min-width: 768px){
 
@@ -22,15 +22,13 @@
     order: 1;
     
     .services__image{
-        min-width: 40rem;
+        width: 35rem;
         
     }
 }
 }
 @media screen and (min-width: 1200px){
     .services__image{
-
-        width: 40rem;
-        height: 40rem;
+        min-width: 57rem;
     }
 }
