@@ -288,8 +288,8 @@
       margin-left: -2.4rem;
       padding-right: -2.4rem;
     }
-    .pr-27{
-      padding-right: 2.75rem;
+    .mr-27{
+      margin-right: 2.75rem;
     }
   .pt-16 {
     padding-top: 1.6rem;
@@ -306,8 +306,8 @@
 
   //-------992px--------//
 @media screen and (min-width: 992px) {
-  .pr-47 {
-    padding-right: 4.7rem;
+  .mr-47 {
+    margin-right: 4.7rem;
   }
   .mt-40{
     margin-top: 4.8rem;
@@ -319,17 +319,18 @@
     margin-top: 9rem;
   }
 }
+@media screen and(min-width: 375px) {
+  .d-none{
+    display: none;
+  }
+}
 
 @media screen and (min-width: 1200px){
 .pb-190{
   padding-bottom: 19rem;
 }
 }
-@media screen and(max-width: 768px) {
-  .d-none{
-    display: none;
-  }
-}
+
 
 
 
