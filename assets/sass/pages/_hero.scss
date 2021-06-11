@@ -18,7 +18,6 @@
 }
 body,
 main,
-#header,
 #crypto,
 #cryptocurrency,
 #services,
@@ -33,12 +32,6 @@ main,
   overflow-x: hidden;
 }
 //image
-.crypto-image__img {
-  max-width: 35rem;
-  object-fit: cover;
-}
-
-
 
 
 
@@ -54,12 +47,21 @@ main,
   background-position: bottom center;
   background-size: cover;
   overflow-y: hidden;
-  padding-bottom: 5rem;
+  padding-bottom: 10rem;
+  z-index: -1;
+  .row{
+    padding: 0 2.3rem;
+  }
+
+
 
 }
-.crypto-container {
-  position: relative;
+.crypto-image__img {
+  max-width: 35rem;
+  margin-top: 8rem;
+  object-fit: cover;
 }
+
 .crypto-text__container{
   padding-bottom: 10.3rem;
   &span{
@@ -71,9 +73,6 @@ main,
   width: 8ch;
   hyphens: auto;
   color: $white;
-}
-.crypto-image__container{
-
 }
 .hero-text__description{
   color: $white
@@ -108,10 +107,11 @@ main,
   #crypto{
   padding-bottom: 10rem;
   }
+ 
   .crypto-image__img {
-    max-width: 35rem;
-    object-fit: contain;
-    margin-top: 10rem;
+    min-width: 39rem;
+    object-fit: cover;
+    margin-top: 15rem;
   }
   .crypto-row {
     flex-wrap: wrap-reverse;
@@ -134,10 +134,13 @@ main,
       line-height: 8rem;
     }
   }
+  .crypto-image__container{
+    justify-content: flex-end;
+  }
   .crypto-image__img {
-    max-width: 38rem;
-    max-height: 40rem;
-    margin-top: 5rem;
+    min-width: 41rem;
+    margin-top: 12rem;
+    object-fit: cover;
 
   }
 }
@@ -147,9 +150,7 @@ main,
  }
 
  .crypto-image__img {
-  min-width: 54rem;
-  max-height: 45rem;
+  min-width: 50rem;
 
 }
-
 }

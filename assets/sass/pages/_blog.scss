@@ -67,13 +67,27 @@
 
 
 }
+@media screen and (min-width:992px) {
+    .cards-article{
+        max-width: 22rem;
+        max-height: 35rem;
+        .cards-article__caption{
+            font-size: 3.85rem;
+        }
+    }
+}
+
 @media screen and (min-width: 1200px){
     .cards-article__wrapper{
         padding-left: 3rem;
         padding-right: 3rem;
+        justify-content: space-between;
     }
     .cards-article{
-        max-width: 26rem;
-        max-height: 40rem;
+        min-width: 26rem;
+        min-height: 40rem;
+        .cards-article__caption{
+            font-size: 5rem;
+        }
     }
 }

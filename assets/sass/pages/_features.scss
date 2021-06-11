@@ -6,11 +6,11 @@
 
 .bg-wave-second{
     width: 100%;
-    max-height: 30rem;
+    min-width: 28rem;
+    max-height: 10rem;
     position: absolute;
     top: -1%;
     left: 0;
-
 }
 
 .features-container>.row{
@@ -60,20 +60,29 @@
 .cards__text{
     padding: 3.4rem 3.2rem 3.8rem 3.2rem;
 }
+@media screen and (min-width: 576px) {
+    .bg-wave-second{
+        max-height: 15rem;
+    }
+}
 @media screen and (min-width: 768px){
     //features
-
-.features-text__container{
-    padding-top: 30rem;
-    
-}
-
+    .bg-wave-second{
+        min-height: 15rem;
+    }
 
 }
 @media screen and (min-width: 992px){
     .features-text__description{
         width: 50ch;
     } 
+    .features-text__container{
+        padding-top: 15rem;
+    }
+  
+    .bg-wave-second{
+        max-height: 20rem;
+    }
 }
 @media screen and (min-width: 1200px){
     .cards__items{
