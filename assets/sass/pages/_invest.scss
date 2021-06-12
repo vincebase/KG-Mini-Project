@@ -2,6 +2,7 @@
 #invest{
     background-color:$light-blue-bg;
     position:relative;
+    overflow:hidden;
 }
 .invest-row{
     margin-top: 30px;
@@ -18,7 +19,7 @@
     width: 100%;
     max-height: 20rem;
     position: absolute;
-    bottom: 0;
+    bottom: -1%;
     left: 0;
     
 }

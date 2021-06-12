@@ -1389,6 +1389,7 @@ main,
 #invest {
   background-color: #D7E2FC;
   position: relative;
+  overflow: hidden;
 }
 
 .invest-row {
@@ -1408,7 +1409,7 @@ main,
   width: 100%;
   max-height: 20rem;
   position: absolute;
-  bottom: 0;
+  bottom: -1%;
   left: 0;
 }
 
