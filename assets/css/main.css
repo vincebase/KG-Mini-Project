@@ -1285,6 +1285,7 @@ main,
   background-color: #D7E2FC;
   overflow-y: hidden;
   position: relative;
+  padding-bottom: 10rem;
 }
 
 .bg-wave-second {
